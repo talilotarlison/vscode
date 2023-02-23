@@ -6,7 +6,7 @@
 
 >Meu Projeto Completo, com mudança de tema troca de fundo, salve e open file.
 
-Projeto construído, em 02/202.
+Projeto construído, em 02/2023.
 
 [🔗 Clique aqui para acessar](https://talilotarlison.github.io/vscode/)
 
