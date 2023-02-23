@@ -4,7 +4,7 @@
 ### EDITOR DE CODIGO ONLINE by Talilo
 ![preview](https://github.com/talilotarlison/coderfinal/blob/main/view.png)
 
->Meu Portfólio Completo, com mudança de tema troca de fundo, salve e open file
+>Meu Projeto Completo, com mudança de tema troca de fundo, salve e open file.
 
 Projeto construído, em 02/202.
 
