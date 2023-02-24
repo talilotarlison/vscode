@@ -108,8 +108,9 @@
 		}
 		
 		.logo > i:hover{
-		color: #007fff; 
+		color: #4B92db;
 		cursor: pointer;
+		opacity: 1.0;
 		}
 		.barra_menus > ul{
 		display:flex;
@@ -129,9 +130,10 @@
 		}
 		
 		.barra_menus > ul > li:hover{
-		color: #007fff;
+		color: #4B92db;
 		font-size: 20px;
 		font-weight:300;
+		opacity: 1.0;
 		}
 		
 		.footer{
@@ -155,6 +157,10 @@
 		}
 		.abrir{
 		display: inline;
+		}
+		
+		.btn_hover:hover{
+		opacity: 0.5;
 		}
 		
     </style>
@@ -208,10 +214,10 @@
     
     </div>
 	<div class="footer">
-      <button><a href="../">Voltar</a></button>
-	  <input type="button" id="homebtn2" onclick="window.location.href = 'index.html';" value="Home">
-      <button id="formatar">Formatar</button>
-      <button id="button">salvar</button>
+      <button class="btn_hover"><a href="../">Voltar</a></button>
+	  <input class="btn_hover" type="button" id="homebtn2" onclick="window.location.href = 'index.html';" value="Home">
+      <button class="btn_hover" id="formatar" >Formatar</button>
+      <button class="btn_hover"  id="button">salvar</button>
 	  <label class="abrir">Abrir:</label>
 	  <input type="file" id="openbtn" onchange="openCode(this.files)" value="Open">
         <label class="abrir">Tema:</label>
@@ -252,8 +258,8 @@
 	<!-- conteudo para exportar e salva o codigo -->  
 	  <div id="fecha_exportar">
 	  <div class="head">	
-	  <div class="nome_baixar_arquivo"><i class="fas fa-floppy-disk"></i> Salvar</div>
-	  <div id="xxx" class="nome_baixar_arq"><i class="fas fa-square-xmark"></i>
+	  <div class="nome_baixar_arquivo "><i class="fas fa-floppy-disk"></i> Salvar</div>
+	  <div id="xxx" class="nome_baixar_arq btn_hover"><i class="fas fa-square-xmark"></i>
        </div>
 	   </div>
 	   <div class="campo_nome_u">
@@ -262,9 +268,11 @@
 	  <input id="nome_arquivo" value="index.html" type="text" alt="Informe o nome do arquivo e o tipo, Ex.: index.html" required></input>
 	  </div>
 	  <p class="nome_baixar_arquivo">Informe o nome do arquivo e o tipo.<b>Ex.: index.html, index.css ou index.js</b></p>
-	  <button id="salvar_final">Salvar</button>
+	  <button  class="btn_hover" id="salvar_final">Salvar</button>
 	  </div>
-	  
+	  <!-- Emplementar lib de personalização do alert  : 
+		SweetAlert makes popup messages easy and pretty.
+		https://sweetalert.js.org/guides/ -->
 </body>
 <script>
 //INFORMAÇÕES:
@@ -403,10 +411,9 @@ var editor = ace.edit("editor");
                 reader.readAsText(file) 
             }
 
+
 	</script>
-	
 	<script src="https://kit.fontawesome.com/32a7e6bf5d.js" crossorigin="anonymous"></script>
-	
 	<script src="http://ajaxorg.github.io/ace-builds/src/ext-modelist.js" type="text/javascript" charset="utf-8"></script>
         <script>
 </html>
